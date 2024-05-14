@@ -33,7 +33,7 @@ app.set('views', './views');
 app.use(cors({
   origin: '*'
 }));
-app.use(siofu.router).listen(3003);
+app.use(siofu.router).listen(4001);
 
 io.on("connection", function (socket) {
   var uploader = new siofu({
